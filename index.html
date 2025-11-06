@@ -108,4 +108,213 @@
         .whatsapp-icon {
             width: 24px;
             height: 24px;
-            filter: brightness
+            filter: brightness(0) invert(1);
+        }
+
+        .benefits {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--dark);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .benefit-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .benefit-icon {
+            font-size: 2.8rem;
+            margin-bottom: 1.2rem;
+            color: var(--primary);
+        }
+        
+        .income-details {
+            text-align: right;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: linear-gradient(135deg, #f8f5ff, #f0ebff);
+            border-radius: 10px;
+            border-right: 4px solid var(--primary);
+        }
+        
+        .income-details h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .income-details ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .income-details li {
+            margin-bottom: 0.3rem;
+            position: relative;
+            padding-right: 1rem;
+        }
+        
+        .income-details li:before {
+            content: "•";
+            color: var(--primary);
+            position: absolute;
+            right: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .whatsapp-button {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">سهام <span>مغانم</span></div>
+                <nav>
+                    <a href="#benefits" style="color: white; margin-left: 1.5rem; text-decoration: none;">المميزات</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>انضمي معانا لفريق سهام مغانم</h1>
+            <p>اكتشفي عالم الجمال و النجاح المالي مع منتجات اوريفلام السويديه الطبيعية الفاخره. وابدئي رحلتك نحو الاستقلال المالي مع علامة تجارية عالمية!!</p>
+            <div class="cta-buttons">
+                <a href="https://chat.whatsapp.com/GzYoJmtLzggAtfG1OW3ukq" class="whatsapp-button" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب" class="whatsapp-icon">
+                    انضمي لمجموعة الواتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2 class="section-title">لماذا تنضمين إلى أسرة سهام مغانم؟</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌍</div>
+                    <h3>علامة تجارية عالمية</h3>
+                    <p>انضمي إلى أوريفليم السويدية - شركة عالمية رائدة في مستحضرات التجميل الطبيعية منذ 1967</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>دخل غير محدود</h3>
+                    <p>ربح مباشر يبدأ من 30% بالإضافة إلى العديد من العروض والهدايا</p>
+                    <div class="income-details">
+                        <h4>ربح غير مباشر يشمل:</h4>
+                        <ul>
+                            <li>عمولات شهرية</li>
+                            <li>شيكات ربح</li>
+                            <li>مكافئات متنوعة</li>
+                            <li>سفريات داخل وخارج المغرب</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📚</div>
+                    <h3>تدريب متكامل</h3>
+                    <p>برامج تدريبية شاملة من الأساسيات إلى الاحتراف في التسويق والبيع</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎁</div>
+                    <h3>منتجات حصرية</h3>
+                    <p>مجموعة واسعة من منتجات الجمال والعناية الفاخرة ذات جودة سويدية طبيعية</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👥</div>
+                    <h3>مجتمع داعم</h3>
+                    <p>انضمي إلى عائلة متكاملة تقدم الدعم المستمر والتوجيه الاحترافي</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>مرونة كاملة</h3>
+                    <p>اعملي من أي مكان وفي الوقت الذي يناسبك بدون قيود أو شروط صعبة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const WHATSAPP_GROUP_LINK = "https://chat.whatsapp.com/GzYoJmtLzggAtfG1OW3ukq";
+        
+        function trackWhatsAppClick(source) {
+            const clickData = {
+                source: source,
+                timestamp: new Date().toISOString(),
+                url: WHATSAPP_GROUP_LINK
+            };
+            
+            let clicks = JSON.parse(localStorage.getItem('whatsappClicks') || '[]');
+            clicks.push(clickData);
+            localStorage.setItem('whatsappClicks', JSON.stringify(clicks));
+            
+            console.log(`تم النقر على رابط الواتساب من: ${source}`);
+        }
+
+        function setupWhatsAppButtons() {
+            const whatsappButtons = document.querySelectorAll('a[href*="whatsapp"]');
+            whatsappButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const source = this.textContent.trim() || 'زر غير معروف';
+                    trackWhatsAppClick(source);
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setupWhatsAppButtons();
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
